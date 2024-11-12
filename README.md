@@ -1,6 +1,6 @@
 # Real-estate-webscrapper
 
-This project is a web scraper designed to extract property listing data for sale in the city of Barcelona from the [Idealista](https://www.idealista.com) website. It utilizes [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) and [undetected_chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver) to efficiently handle scraping while simulating browser behavior.
+This project is a web scraper designed to extract property listing data for sale in the city of Barcelona from the [Idealista](https://www.idealista.com) website. It utilizes [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) and [undetected_chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver) to efficiently handle scraping while simulating browser behavior. The dataset can be accesed in [Zenodo.org](https://zenodo.org/records/14109828).
 
 ## Files
 
