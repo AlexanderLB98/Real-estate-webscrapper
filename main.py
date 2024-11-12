@@ -3,7 +3,6 @@ import random
 import time
 import pandas as pd
 import undetected_chromedriver as uc
-from selenium.webdriver.chrome.options import Options
 import time
 
 browser = uc.Chrome()
