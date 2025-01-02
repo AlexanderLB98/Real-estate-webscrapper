@@ -1,22 +1,24 @@
 import streamlit as st
+import os
 
 from src.basic_scrape import basic_scrape
 from src.basic_scrappy import basic_scrappy
 
+from src.streamlit_src import data_cleaning_pipeline
 from main import scrape_city
 # Custom functions
 from src.sidebar import sidebar
 
-
-def mainpage():
+def mainpage(selected_files):
     st.title("Idealista Web Scrapping")
     initialize() 
     scrape_type_buttons()
-
+    
+    data_cleaning_pipeline(selected_files)
+    
 def initialize():
     if 'df' not in st.session_state:
         st.session_state['df'] = None
-
 
 @st.cache_data
 def convert_df(df):
@@ -38,5 +40,6 @@ def scrape_type_buttons():
         )
 
 if __name__ == "__main__":
-    mainpage()
-    sidebar()
+    selected_files = sidebar()
+    mainpage(selected_files)
+    
