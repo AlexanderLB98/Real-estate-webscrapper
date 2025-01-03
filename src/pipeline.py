@@ -53,15 +53,6 @@ def duplicates_ID(df):
     df_new = df_new.drop_duplicates(subset="ID", keep="first")
     return df_new
 
-pipeline_steps = [
-        fix_ID,
-        fix_price,
-        get_number_of_rooms,
-        get_meters,
-        get_elevator,
-        get_floor,   
-        ]
-
 def apply_pipeline(df: pd.DataFrame, steps: list = [
     fix_ID,
     fix_price,
