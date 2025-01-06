@@ -3,7 +3,7 @@
 This project is a web scraper designed to extract property listing data for sale in the city of Barcelona from the [Idealista](https://www.idealista.com) website. It utilizes [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) and [undetected_chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver) to efficiently handle scraping while simulating browser behavior. The dataset can be accesed in [Zenodo.org](https://zenodo.org/records/14109828).
 
 ## Files
-
+- `run.sh`: Launch a local webserver where you can scrape new data, and process raw data.
 - `main.py`: Main script that performs web scraping and saves results to a CSV file.
 - `web_scrapper.ipynb`: Jupyter Notebook version of the script, useful for step-by-step testing and analysis.
 
@@ -35,7 +35,7 @@ conda env create -n webscrapper python
 Then install the following required libraries
 
 ```bash
-pip install pandas beautifulsoup4 undetected-chromedriver
+pip install pandas beautifulsoup4 undetected-chromedriver streamlit
 ```
 
 ### Option 2: import conda env from file
